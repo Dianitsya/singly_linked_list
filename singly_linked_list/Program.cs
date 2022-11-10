@@ -12,6 +12,10 @@ namespace singly_linked_list
         public string nama;
         public Node next;
     }
+    class List
+    {
+        Node START;
+    }
     class Program
     {
         static void Main(string[] args)
