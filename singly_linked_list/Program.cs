@@ -64,11 +64,26 @@ namespace singly_linked_list
             nodebaru.next = current;
             previous.next = previous;
         }
-    }
+        //Method untuk menghapus node tertentu didalam list
+        public bool delNote(int nim)
+        {
+            Node previous , current;
+            previous = current = null;
+            //check apakah node yang dimaksud ada di dalam list atau tidak
+            if (Search(nim, ref previous, ref current) == false)
+                return false;
+            previous.next = current.next;
+            if (current == START)
+            
+                START = START.next;
+                return true;
+           
+        }
+        
+
     class Program
     {
         static void Main(string[] args)
         {
         }
     }
-}
