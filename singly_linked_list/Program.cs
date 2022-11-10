@@ -15,6 +15,13 @@ namespace singly_linked_list
     class List
     {
         Node START;
+        public List()
+        {
+            START = null;
+        }
+        //Method untuk menambahkan sebuah node ke dalam list
+
+       
     }
     class Program
     {
