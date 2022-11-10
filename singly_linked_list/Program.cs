@@ -21,8 +21,20 @@ namespace singly_linked_list
         }
         //Method untuk menambahkan sebuah node ke dalam list
 
-       
-    }
+        public void addNote()
+        {
+            int nim;
+            string nm;
+            Console.WriteLine("\nMasukkan nomer Mahasiswa: ");
+            nim = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nMasukkan nama Mahasiswa: ");
+            nm = Console.ReadLine();
+
+            Node nodebaru = new Node();
+            nodebaru.noMhs = nim;
+            nodebaru.nama = nm;
+
+            
     class Program
     {
         static void Main(string[] args)
