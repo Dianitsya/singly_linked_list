@@ -60,7 +60,11 @@ namespace singly_linked_list
                 previous = current;
                 current = current.next;
             }
-            
+            //Node baru akan ditempatkan di antara previous dan current
+            nodebaru.next = current;
+            previous.next = previous;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
